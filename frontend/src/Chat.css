@@ -1,0 +1,85 @@
+/* Simple layout similar to provided screenshot */
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.chat-container {
+  width: 420px;
+  border: 2px solid #111;
+  padding: 12px;
+  margin: 8px;
+  box-sizing: border-box;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  height: 620px;
+}
+
+.title {
+  text-align: center;
+  margin: 4px 0 10px 0;
+  font-weight: bold;
+}
+
+.name-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.name-form input {
+  flex: 1;
+  padding: 8px;
+}
+
+.name-form button {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.messages {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  background: #fff;
+  margin-bottom: 8px;
+  white-space: pre-wrap;
+}
+
+.message-line {
+  margin-bottom: 8px;
+}
+
+.send-form {
+  display: flex;
+  gap: 8px;
+}
+
+.send-form input {
+  flex: 1;
+  padding: 8px;
+}
+
+.send-form button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 8px;
+  text-align: center;
+  font-style: italic;
+  color: #333;
+}
